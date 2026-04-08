@@ -1,76 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Food, LLC</title>
-
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-
-  <!-- External CSS -->
-  <link rel="stylesheet" href="css/styles.css">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Assignment Solution for Module 3</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
-
 <body>
 
-<!-- NAVBAR -->
-<nav class="navbar navbar-default">
-  <div class="container">
+  <nav id="header-nav" class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a href="index.html" class="pull-left visible-md visible-lg">
+          <div id="logo-img"></div>
+        </a>
 
-    <div class="navbar-header">
-      <!-- Brand -->
-      <a class="navbar-brand" href="#">Food, LLC</a>
+        <div class="navbar-brand">
+          <a href="index.html"><h1>Food, LLC</h1></a>
+        </div>
 
-      <!-- Mobile toggle button -->
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
+        <button type="button" class="navbar-toggle collapsed visible-xs" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+
+      <div id="collapsable-nav" class="collapse navbar-collapse">
+         <ul id="nav-list" class="nav navbar-nav navbar-right visible-xs text-center">
+          <li><a href="#">Chicken</a></li>
+          <li><a href="#">Beef</a></li>
+          <li><a href="#">Sushi</a></li>
+        </ul>
+      </div>
     </div>
+  </nav>
 
-    <!-- Mobile dropdown menu -->
-    <div class="collapse navbar-collapse" id="menu">
-      <ul class="nav navbar-nav visible-xs text-center">
-        <li><a href="#">Chicken</a></li>
-        <li><a href="#">Beef</a></li>
-        <li><a href="#">Sushi</a></li>
-      </ul>
-    </div>
+  <div id="main-content" class="container">
+    <h2 id="menu-title" class="text-center">Our Menu</h2>
 
-  </div>
-</nav>
+    <div class="row">
+      <div class="col-md-4 col-sm-6 col-xs-12">
+        <div class="menu-item">
+          <h3 class="text-center">Chicken</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. 
+            Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa. Fusce ac turpis quis ligula lacinia aliquet.
+          </p>
+        </div>
+      </div>
 
-<!-- MAIN CONTENT -->
-<div class="container">
+      <div class="col-md-4 col-sm-6 col-xs-12">
+        <div class="menu-item">
+          <h3 class="text-center">Beef</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. 
+          </p>
+        </div>
+      </div>
 
-  <h1 class="text-center">Our Menu</h1>
-
-  <div class="row">
-    <div class="col-xs-12">
-      <div class="menu-section">
-        <h3 class="text-center">Chicken</h3>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-          Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-          Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-          Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-          Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </p>
+      <div class="col-md-4 col-sm-12 col-xs-12">
+        <div class="menu-item">
+          <h3 class="text-center">Sushi</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. 
+          </p>
+        </div>
       </div>
     </div>
   </div>
 
-</div>
-
-<!-- jQuery -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-<!-- Bootstrap JS -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
 </html>

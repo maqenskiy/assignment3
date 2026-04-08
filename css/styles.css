@@ -1,10 +1,53 @@
+/* Основные стили */
 body {
-  font-size: 16px;
+  font-family: 'Oxygen', sans-serif;
+  background-color: #f5f5f5;
 }
 
-.menu-section {
-  background-color: #f8f8f8;
-  padding: 20px;
-  margin-top: 20px;
-  height: 1000px;
+#header-nav {
+  background-color: #f6b22f;
+  border-radius: 0;
+  border: 0;
+  margin-bottom: 0;
+}
+
+.navbar-brand h1 {
+  font-family: 'Lora', serif;
+  color: #55422d;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: .75;
+}
+
+#nav-list a {
+  color: #55422d;
+  background-color: white;
+  border: 1px solid #55422d;
+}
+
+/* Сетка и блоки меню */
+.menu-item {
+  background-color: #999999;
+  border: 2px solid black;
+  padding: 15px;
+  margin-bottom: 30px;
+  min-height: 200px; /* Чтобы блоки не схлопывались */
+}
+
+.menu-item h3 {
+  margin-top: 0;
+  font-weight: bold;
+}
+
+#menu-title {
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+/* На мобильных устройствах текст в меню должен быть белым/другим цветом при наведении */
+#nav-list a:hover {
+  background-color: #e7e7e7;
 }
